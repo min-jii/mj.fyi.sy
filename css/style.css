@@ -1,0 +1,481 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
+html  {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+::selection {
+  background-color: transparent;
+  color: cyan;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: pretendard, sans-serif;
+  font-style: normal;
+  cursor: crosshair;
+  padding-top: 4vh;
+
+  -ms-overflow-style: none;
+  }
+ 
+  ::-webkit-scrollbar {
+    display: none; 
+}
+
+header {
+  position: fixed;
+  z-index: 50;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 32px;
+  border-bottom: .2px solid white;
+  background-color: black;
+}
+
+nav ul {
+  font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.5;
+  word-break: keep-all;
+  float: left;
+  padding: 0% 1.5%;
+}
+
+nav ul li {
+  list-style: none;
+  width: 13vw;
+  height: 32px;
+  line-height: 32px;
+  text-align: left;
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: gray;
+  cursor: cell;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
+  animation: nav-blink .8s step-end 0s infinite; 
+}
+
+@keyframes nav-blink {
+  50% {
+    color: gray;
+    opacity: 1;
+  }
+}
+
+section {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 69%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 3.2vh 0vw;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  outline: 0;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section:not(:first-of-type) {
+  display: none;
+}
+
+section:target {
+  display: block;
+}
+
+section p a {
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+div h2 {
+  font-size: 3.2vw;
+  font-weight: 600;
+  line-height: 1.7;
+  word-break: keep-all;
+  padding-left: 1.1vw;
+  padding-right: 4.5vw;
+  padding-bottom: 5vh;
+  color: gray;
+}
+
+div h2 a {
+  text-decoration: none;
+  color: white;
+  cursor: cell;
+  animation: fade 1.2s infinite linear;
+}
+
+@keyframes fade {
+  50% {
+    opacity: 0.3;
+  }
+} 
+
+div h3 {
+  font-size: 2.3vw;
+  font-weight: 500;
+  line-height: 1.65;
+  word-break: keep-all;
+  padding-right: 1.6vw;
+  padding-bottom: 2vh; 
+  color: white;
+}
+
+div h3 p {
+  font-size: 2.3vw;
+  font-weight: 500;
+  line-height: 1.65;
+  word-break: keep-all;
+  padding-right: 1.6vw;
+  color: white;
+}
+
+div h3 a {
+  text-decoration: none;
+}
+
+sup.subscript {
+  border: 1.2px solid gray;
+  border-radius: 100%;
+  padding: 0vh 1vw;
+  margin: 0vh 0.2vw;
+  vertical-align: top;
+}
+
+sup.subscript:hover {
+  border: 1.2px solid white;
+  background-color: white;
+  color: black;
+  animation: blink .8s step-end 0s infinite; 
+  cursor: cell;
+}
+
+@keyframes blink {
+  50% {
+    background-color: black;
+    color: white;
+    opacity: 1;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
+}
+
+.sub {
+  border: .9px solid gray;
+  border-radius: 100%;
+  padding: 0vh 1vw;
+  margin: 0vh 0.2vw;
+  vertical-align: top;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0% .7%;
+  margin: 3.5vh 0vw 0vh 0vw;
+}
+
+.col-1 {
+  float: right;
+  width: 31%;
+  margin: 3vh 0vw;
+}
+
+/*.col-3 {
+  width: 73.6%;
+  margin: 0% .7%;
+}*/
+
+.mark {
+  background: none;
+  color: white;
+}
+
+.blink {
+  text-decoration: none;
+  color: white;
+  cursor: cell;
+  animation: fade 1.2s infinite linear;
+}
+
+.under {
+  border-bottom: .7px solid;
+}
+
+@media screen and (min-width: 600px) {
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 100%;
+    }
+
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
+    html  {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+
+    ::selection {
+      background-color: transparent;
+      color: cyan;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: pretendard, sans-serif;
+      font-style: normal;
+      cursor: crosshair;
+      padding-top: 4vh;
+
+      -ms-overflow-style: none;
+      }
+     
+      ::-webkit-scrollbar {
+        display: none; 
+    }
+
+    header {
+      position: fixed;
+      z-index: 50;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      height: 44px;
+      border-bottom: .9px solid white;
+      background-color: black;
+    }
+
+    nav ul {
+      font-size: .92vw;
+      font-weight: 500;
+      line-height: 1.5;
+      word-break: keep-all;
+      float: left;
+      padding: 0% 1.5%;
+    }
+
+    nav ul li {
+      list-style: none;
+      width: 7vw;
+      height: 44px;
+      line-height: 44px;
+      text-align: left;
+      float: left;
+    }
+
+    nav ul li a {
+      display: block;
+      color: gray;
+      cursor: cell;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: white;
+      animation: nav-blink .8s step-end 0s infinite; 
+    }
+
+    @keyframes nav-blink {
+      50% {
+        color: gray;
+        opacity: 1;
+      }
+    }
+
+    section {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 73%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding: 4vh 0vw;
+      text-decoration: none;
+      color: inherit;
+      background-color: inherit;
+      outline: 0;
+    }
+
+    section::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    section:not(:first-of-type) {
+      display: none;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    section p a {
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+    }
+
+    div h2 {
+      font-size: 1.8vw;
+      font-weight: 600;
+      line-height: 1.65;
+      word-break: keep-all;
+      padding-left: 1.1vw;
+      padding-right: 2.2vw;
+      padding-bottom: 5vh;
+      color: gray;
+    }
+
+    div h2 a {
+      text-decoration: none;
+      color: white;
+      cursor: cell;
+      animation: fade 1.2s infinite linear;
+    }
+
+    @keyframes fade {
+      50% {
+        opacity: 0.3;
+      }
+    } 
+
+    div h3 {
+      font-size: 1.2vw;
+      font-weight: 500;
+      line-height: 1.58;
+      word-break: keep-all;
+      padding-right: 1.4vw;
+      padding-bottom: 3.5vh; 
+      color: white;
+    }
+
+    div h3 p {
+      font-size: 1.2vw;
+      font-weight: 500;
+      line-height: 1.58;
+      word-break: keep-all;
+      padding-right: 1.4vw;
+      color: white;
+    }
+
+    div h3 a {
+      text-decoration: none;
+    }
+
+    sup.subscript {
+      border: 1.5px solid gray;
+      border-radius: 100%;
+      padding: 0vh 1vw;
+      margin: 0vh 0.2vw;
+      vertical-align: top;
+    }
+
+    sup.subscript:hover {
+      border: 1.5px solid white;
+      background-color: white;
+      color: black;
+      animation: blink .8s step-end 0s infinite; 
+      cursor: cell;
+    }
+
+    @keyframes blink {
+      50% {
+        background-color: black;
+        color: white;
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 2vh;
+    }
+
+    .sub {
+      border: 1.5px solid gray;
+      border-radius: 100%;
+      padding: 0vh 1vw;
+      margin: 0vh 0.2vw;
+      vertical-align: top;
+    }
+
+    .row {
+      width: 100%;
+      height: auto;
+      display: flex;
+      padding: 0% .7%;
+      margin: 3.5vh 0vw 0vh 0vw;
+    }
+
+    .col-1 {
+      float: right;
+      width: 27%;
+      margin: 4vh 0vw;
+    }
+
+    /*.col-3 {
+      width: 73.6%;
+      margin: 0% .7%;
+    }*/
+
+    .mark {
+      background: none;
+      color: white;
+    }
+
+    .blink {
+      text-decoration: none;
+      color: white;
+      cursor: cell;
+      animation: fade 1.2s infinite linear;
+    }
+
+    .under {
+      border-bottom: 1.5px solid;
+    }
+}
