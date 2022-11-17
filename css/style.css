@@ -212,7 +212,10 @@ img {
 }
 
 .col-1 {
-  float: right;
+  position: absolute;
+  top: 4%;
+  right: 0;
+  overflow: auto;
   width: 31%;
   margin: 3vh 0vw;
 }
@@ -324,7 +327,7 @@ img {
 
     section {
       display: block;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 73%;
