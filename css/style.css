@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 section {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 69%;
@@ -453,7 +453,10 @@ img {
     }
 
     .col-1 {
-      float: right;
+      position: absolute;
+      top: 4%;
+      right: 0;
+      overflow: auto;
       width: 27%;
       margin: 4vh 0vw;
     }
